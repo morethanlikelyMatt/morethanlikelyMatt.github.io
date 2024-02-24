@@ -47,7 +47,8 @@
          {"name": "NumberInterpolator", "size": 1382},
          {"name": "ObjectInterpolator", "size": 1629},
          {"name": "PointInterpolator", "size": 1675},
-         {"name": "RectangleInterpolator", "size": 2042}
+         {"name": "RectangleInterpolator", "size": 2042},
+	 {"name": "DragForce", "size": 2042}
         ]
        },
        {"name": "ISchedulable", "size": 1041},
