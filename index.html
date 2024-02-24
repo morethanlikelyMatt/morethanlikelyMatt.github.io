@@ -34,10 +34,10 @@
     
       // Initialize the nodes
       const node = svg
-        .selectAll("circle")
+        .selectAll("square")
         .data(data.nodes)
-        .join("circle")
-          .attr("r", 20)
+        .join("square")
+          .attr("r", 40)
           .style("fill", "#69b3a2")
     
       // Let's list the force we wanna apply on the network
