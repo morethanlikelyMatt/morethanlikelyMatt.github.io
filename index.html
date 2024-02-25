@@ -34,9 +34,9 @@
     
       // Initialize the nodes
       const node = svg
-        .selectAll("rect")
+        .selectAll("circle")
         .data(data.nodes)
-        .join("rect")
+        .join("circle")
           .attr("r", 40)
           .style("fill", "#69b3a2")
     
