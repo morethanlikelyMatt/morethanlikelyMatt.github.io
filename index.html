@@ -34,10 +34,14 @@ d3.json("data.json").then( function( data) {
 
   // Initialize the nodes
   const node = svg
-    .selectAll("circle")
+    .selectAll("rect")
     .data(data.nodes)
-    .join("circle")
-      .attr("r", 20)
+    .join("rect")
+      //.attr("r", 20)
+      .attr("x",0)
+      .attr("y",0)
+      .attr("width",200)
+      .attr("height",100)
       .style("fill", "#4287f5")
 
   // Let's list the force we wanna apply on the network
