@@ -25,6 +25,12 @@ const svg = d3.select("#my_dataviz")
 
 d3.json("data.json").then( function( data) {
 
+  function color(id) {
+    if (id< 4) {
+      var color = "#4287f5";
+      } else {
+      var color = "#fc036f";
+      }
   // Initialize the links
   const link = svg
     .selectAll("line")
@@ -42,7 +48,7 @@ d3.json("data.json").then( function( data) {
       .attr("y",0)
       .attr("width",40)
       .attr("height",20)
-      .style("fill", "#4287f5")
+      .style("fill", color(node.id))
 
   // Let's list the force we wanna apply on the network
   const simulation = d3.forceSimulation(data.nodes)                 // Force algorithm is applied to data.nodes
