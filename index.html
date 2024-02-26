@@ -49,7 +49,7 @@ d3.json("data.json").then( function( data) {
       .attr("y",0)
       .attr("width",40)
       .attr("height",20)
-      .style("fill", color(node.id))
+      .style("fill", color(data.nodes.id))
 
   // Let's list the force we wanna apply on the network
   const simulation = d3.forceSimulation(data.nodes)                 // Force algorithm is applied to data.nodes
