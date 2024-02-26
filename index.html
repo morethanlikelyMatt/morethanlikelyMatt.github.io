@@ -62,6 +62,8 @@ d3.json("data.json").then( function( data) {
     node.append("text")
       .attr("alignment-baseline", "middle")
 	    .attr("text-anchor", "middle")
+      .attr('stroke', 'green')
+      .style("font-size", 19)
       .text("chicken")
 
   // Let's list the force we wanna apply on the network
