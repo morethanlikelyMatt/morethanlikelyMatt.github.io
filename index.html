@@ -63,8 +63,8 @@ d3.json("data.json").then( function( data) {
         .attr("y2", function(d) { return d.target.y; });
 
     node
-         .attr("cx", function (d) { return d.x+6; })
-         .attr("cy", function(d) { return d.y-6; });
+         .attr("x", function (d) { return d.x+6; })
+         .attr("y", function(d) { return d.y-6; });
   }
 
 });
