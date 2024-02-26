@@ -50,6 +50,17 @@ d3.json("data.json").then( function( data) {
       .attr("width",40)
       .attr("height",20)
       .style("fill", color(data.nodes.id))
+  
+  const g = node.append("g")
+              .attr("transform", function(d, i) {
+                        return "translate(0,0)";
+               });
+  
+  g.append("text")
+     .attr("x", 150)
+     .attr("y", 50)
+     .attr("stroke", "#fff")
+     .text("This is an ellipse!");
     
     // node.append("rect")
     //   .attr("x",0)
