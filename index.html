@@ -38,7 +38,7 @@ d3.json("data.json").then( function( data) {
     .data(data.nodes)
     .join("circle")
       .attr("r", 20)
-      .style("fill", "#69b3a2")
+      .style("fill", "#4287f5")
 
   // Let's list the force we wanna apply on the network
   const simulation = d3.forceSimulation(data.nodes)                 // Force algorithm is applied to data.nodes
