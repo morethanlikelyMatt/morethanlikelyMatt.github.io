@@ -50,13 +50,8 @@ d3.json("data.json").then( function( data) {
       .attr("width",40)
       .attr("height",20)
       .style("fill", color(data.nodes.id))
-
-    svg.append("text")
-      .attr("x", 100)             
-      .attr("y", 100)
-      .attr("text-anchor", "middle")  
-      .style("font-size", "36px") 
-      .style('fill', 'black')
+    
+    node.append("text")
       .text(data.nodes.id)
 
   // Let's list the force we wanna apply on the network
