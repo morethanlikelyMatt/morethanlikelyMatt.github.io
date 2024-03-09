@@ -2,7 +2,7 @@
 <meta charset="utf-8">
 
 <!-- Load d3.js -->
-<script src="https://d3js.org/d3.v7.js"></script>
+<script src="cytoscape.min.js"></script>
 
 <!-- Create a div where the graph will take place -->
 <div id="my_dataviz"></div>
@@ -37,7 +37,7 @@ d3.json("data.json").then( function( data) {
     .selectAll("line")
     .data(data.links)
     .join("line")
-      .style("stroke", "#aaa")
+      .style("stroke", "#ccc")
 
   // Initialize the nodes
   const node = svg
