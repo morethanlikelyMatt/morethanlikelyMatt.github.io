@@ -49,7 +49,7 @@ d3.json("data.json").then( function( data) {
       .attr("y",0)
       .attr("width",40)
       .attr("height",20)
-      .style("fill", color(data.nodes.id))
+      .style("fill", color(data.nodes[0].id))
   
   const g = node.append("g")
               .attr("transform", function(d, i) {
